@@ -47,9 +47,23 @@ If the control input changes to AB = 10, then all the gates are restricted excep
  
  
 ### Procedure
-/* write all the steps invloved */
+Step 1:
+Open Quartus II and select new project and choose the file location.
 
+Step 2:
+Module Declaration. Module should have the file name.
 
+Step 3:
+Input-Output Delecaration.
+
+Step 4:
+Use wire to define the functionality of logic circuits.
+
+Step 5:
+At the end give endmodule.
+
+Step 6:
+Run the program and choose RTL viewer to get RTL realization.
 
 ### PROGRAM :
 ```
@@ -58,59 +72,82 @@ Developed by: NIVETHA K
 RegisterNumber:212222230102
 MULTIPLEXER:
 
-module mux(i0,i1,i2,i3,s0,s1,y);
-input i0,i1,i2,i3,s0,s1;
-output y;
-wire p,q,r,s,s0c,s1c;
-not(s0c,s0);
-not(s1c,s1);
-and(p,s0c,s1c,i0);
-and(q,s0c,s1,i1);
-and(r,s0,s1c,i2);
-and(s,s0,s1,i3);
-or(y,p,q,r,s);
+module ex07(I0,I1,I2,I3,S0,S1,Y);
+input I0,I1,I2,I3,S0,S1;
+output Y;
+wire P,Q,R,S,S0c,S1c;
+not(S0c,S0);
+nor(S1c,S1);
+and (P,S0c,S1c,I0);
+and(Q,S0c,S1,I1);
+and(R,S0,S1c,I2);
+and(S,S0,S1,I3);
+or(Y,P,Q,R,S);
 endmodule
 
 
 DEMULTIPLEXER:
 
-module mux(y0,y1,y2,y3,s0,s1,i);
-input s0,s1,i;
-output y0,y1,y2,y3;
-wire s0c,s1c;
-nor(s0c,s0);
-nor(s1c,s1);
-and(y0,i,s0c,s1c);
-and(y1,i,s0c,s1);
-and(y2,i,s0,s1c);
-and(y3,i,s0,s1);
+module ex07(Y0,Y1,Y2,Y3,S0,S1,I);
+input I,S0,S1;
+output Y0,Y1,Y2,Y3;
+wire S0c,S1c;
+not(S0c,S0);
+nor(S1c,S1);
+and (Y0,I,S0c,S1c);
+and(Y1,I,S0c,S1);
+and(Y2,I,S0,S1c);
+and(Y3,I,S0,S1);
 endmodule
-
 ```
 
-
-
+OUTPUT
 
 ### RTL LOGIC  
 
+Multiplexer
 
+![image](https://github.com/NivethaKumar30/Exercise-07-Multiplexer-and-De--multiplexer/assets/119559844/b2e42542-f555-445c-8d30-43f4754280c4)
 
+De-multiplexer
 
-
-
+![image](https://github.com/NivethaKumar30/Exercise-07-Multiplexer-and-De--multiplexer/assets/119559844/31d86a6b-3950-4fb1-999a-07c0b68ac565)
 
 
 ### TIMING DIGRAMS  
 
+Multiplexer
+WHEN I0=1
 
+![image](https://github.com/NivethaKumar30/Exercise-07-Multiplexer-and-De--multiplexer/assets/119559844/af36ed1c-d3e8-4420-9212-09cbcb1633fb)
 
+WHEN I1=1
 
+![image](https://github.com/NivethaKumar30/Exercise-07-Multiplexer-and-De--multiplexer/assets/119559844/03c42c60-aa9d-4c59-97e8-752a6924df98)
+
+WHEN I2=1
+
+![image](https://github.com/NivethaKumar30/Exercise-07-Multiplexer-and-De--multiplexer/assets/119559844/a525c540-c5e7-421c-a60d-06e32ae31efd)
+
+WHEN I3=1
+
+![image](https://github.com/NivethaKumar30/Exercise-07-Multiplexer-and-De--multiplexer/assets/119559844/b76a46f0-c01f-4f9c-8e26-fbe9209e3d27)
+
+De-multiplexer
+
+![image](https://github.com/NivethaKumar30/Exercise-07-Multiplexer-and-De--multiplexer/assets/119559844/57de748c-c602-415a-8dfb-27c5fdbcf611)
 
 ### TRUTH TABLE 
 
+Multiplexer
 
+![image](https://github.com/NivethaKumar30/Exercise-07-Multiplexer-and-De--multiplexer/assets/119559844/f52052ba-588a-468d-9d67-f9fd84660c8b)
 
+De-multiplexer
 
+![image](https://github.com/NivethaKumar30/Exercise-07-Multiplexer-and-De--multiplexer/assets/119559844/c8db0314-513e-4960-9492-0658b1aabb29)
 
 
 ### RESULTS 
+
+4 X1 multiplexer and 1X4 de multiplexer has been implemented using verilog and outputs are validated.
