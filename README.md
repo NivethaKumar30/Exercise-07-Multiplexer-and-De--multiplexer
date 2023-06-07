@@ -66,41 +66,36 @@ Step 6:
 Run the program and choose RTL viewer to get RTL realization.
 
 ### PROGRAM :
-```
-Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: NIVETHA K
-RegisterNumber:212222230102
-MULTIPLEXER:
 
-module ex07(I0,I1,I2,I3,S0,S1,Y);
-input I0,I1,I2,I3,S0,S1;
-output Y;
-wire P,Q,R,S,S0c,S1c;
-not(S0c,S0);
-nor(S1c,S1);
-and (P,S0c,S1c,I0);
-and(Q,S0c,S1,I1);
-and(R,S0,S1c,I2);
-and(S,S0,S1,I3);
-or(Y,P,Q,R,S);
-endmodule
-
-
-DEMULTIPLEXER:
-
-module ex07(Y0,Y1,Y2,Y3,S0,S1,I);
-input I,S0,S1;
-output Y0,Y1,Y2,Y3;
-wire S0c,S1c;
-not(S0c,S0);
-nor(S1c,S1);
-and (Y0,I,S0c,S1c);
-and(Y1,I,S0c,S1);
-and(Y2,I,S0,S1c);
-and(Y3,I,S0,S1);
+For MULTIPLEXER:
+ ```
+module mul(s0,s1,a0,a1,a2,a3,y);
+input s0,s1,a0,a1,a2,a3;
+output y;
+wire a,b,c,d,s0bar,s1bar;
+not(s0bar,s0);
+not(s1bar,s1);
+and(a,s0,s1,a3);
+and(b,s0bar,s1,a2);
+and (c,s0,s1bar,a1);
+and(d,s0bar,s1bar,a0);
+or (y,a,b,c,d);
 endmodule
 ```
-
+For DEMULTIPLEXER:
+```
+module demul(s0,s1,i,y0,y1,y2,y3);
+input s0,s1,i;
+output y0,y1,y2,y3;
+wire s0bar,s1bar;
+not(s0bar,s0);
+not(s1bar,s1);
+and(y3,i,s0,s1);
+and(y2,i,s0bar,s1);
+and(y1,i,s0,s1bar);
+and(y0,i,s0bar,s1bar);
+endmodule
+```
 OUTPUT
 
 ### RTL LOGIC  
