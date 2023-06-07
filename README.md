@@ -98,49 +98,35 @@ endmodule
 ```
 OUTPUT
 
-### RTL LOGIC  
+TRUTH TABLE
 
-Multiplexer
+MULTIPLEXER:
 
-![image](https://github.com/NivethaKumar30/Exercise-07-Multiplexer-and-De--multiplexer/assets/119559844/b2e42542-f555-445c-8d30-43f4754280c4)
+![1](https://github.com/NivethaKumar30/Exercise-07-Multiplexer-and-De--multiplexer/assets/119559844/40dbfef2-257f-470c-af02-cc138f820dc8)
 
-De-multiplexer
+DEMULTIPLEXER:
 
-![image](https://github.com/NivethaKumar30/Exercise-07-Multiplexer-and-De--multiplexer/assets/119559844/31d86a6b-3950-4fb1-999a-07c0b68ac565)
+![2](https://github.com/NivethaKumar30/Exercise-07-Multiplexer-and-De--multiplexer/assets/119559844/fc36816b-a7a0-4319-b8cf-da2c0644c7f0)
 
+RTL LOGIC
 
-### TIMING DIGRAMS  
+MULTIPLEXER:
 
-Multiplexer
-WHEN I0=1
+![3](https://github.com/NivethaKumar30/Exercise-07-Multiplexer-and-De--multiplexer/assets/119559844/b3708d4b-1400-456e-8427-9d6a2a71a9f7)
 
-![image](https://github.com/NivethaKumar30/Exercise-07-Multiplexer-and-De--multiplexer/assets/119559844/af36ed1c-d3e8-4420-9212-09cbcb1633fb)
+DEMULTIPLEXER:
 
-WHEN I1=1
+![4](https://github.com/NivethaKumar30/Exercise-07-Multiplexer-and-De--multiplexer/assets/119559844/0b789b01-aaa1-482f-99f0-ef410ba5f442)
 
-![image](https://github.com/NivethaKumar30/Exercise-07-Multiplexer-and-De--multiplexer/assets/119559844/03c42c60-aa9d-4c59-97e8-752a6924df98)
+TIMING DIGRAMS
 
-WHEN I2=1
+MULTIPLEXER:
 
-![image](https://github.com/NivethaKumar30/Exercise-07-Multiplexer-and-De--multiplexer/assets/119559844/a525c540-c5e7-421c-a60d-06e32ae31efd)
+![5](https://github.com/NivethaKumar30/Exercise-07-Multiplexer-and-De--multiplexer/assets/119559844/45219106-dd64-4c49-97dc-f78ce32ed015)
 
-WHEN I3=1
+DEMULTIPLEXER:
 
-![image](https://github.com/NivethaKumar30/Exercise-07-Multiplexer-and-De--multiplexer/assets/119559844/b76a46f0-c01f-4f9c-8e26-fbe9209e3d27)
-
-De-multiplexer
-
-![image](https://github.com/NivethaKumar30/Exercise-07-Multiplexer-and-De--multiplexer/assets/119559844/57de748c-c602-415a-8dfb-27c5fdbcf611)
-
-### TRUTH TABLE 
-
-Multiplexer
-
-![image](https://github.com/NivethaKumar30/Exercise-07-Multiplexer-and-De--multiplexer/assets/119559844/f52052ba-588a-468d-9d67-f9fd84660c8b)
-
-De-multiplexer
-
-![image](https://github.com/NivethaKumar30/Exercise-07-Multiplexer-and-De--multiplexer/assets/119559844/c8db0314-513e-4960-9492-0658b1aabb29)
+![6](https://github.com/NivethaKumar30/Exercise-07-Multiplexer-and-De--multiplexer/assets/119559844/4ebc1436-8df7-48ea-918a-811ed3a59049)
 
 
 ### RESULTS 
